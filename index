@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <title> лабораторная 4</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+        <title>HTML + CSS Form</title>
+      </head>
+    <body> 
+        <form class="form">
+            <div class="form__header">
+              <h1>тест:"Какой ты лапух"</h1>
+              <hr />
+              </div>
+            
+        <div class="form__body">
+            <div class="form__col">
+              <div class="form__group">
+                <label for="first-name">Имя</label><br />
+                <input type="text" name="first-name" id="first-name" class="form__control" />
+              </div>
+              <div class="form__group">
+                <label for="email">Часто забываешь выполнить домашнее задание?</label><br />
+                <input
+                  type="question1"
+                  name="name"
+                  id="1"
+                  class="form__control"
+                  placeholder=" Ответ: Да или Нет"
+                />
+              </div>
+              <div class="form__group">
+                <label for="email">Часто ленишься?</label><br />
+                <input
+                  type="question2"
+                  name="name"
+                  id="2"
+                  class="form__control"
+                  placeholder=" Ответ: Да или Нет"
+                />
+                </div>
+
+                <button type="button" class="form__submit" onclick="alerted()">
+                    Отправить
+                </button>
+                
+                <p id="p">
+
+                </p>
+            </div>
+        </div>
+        </form>
+    </body>
+    
+    </head>
+    <script>
+        function alerted(){
+            let a = document.getElementById("p").value ="Ты - лапух в любой вариации!";
+            document.getElementById("p").innerHTML = a;
+        }
+    </script>
+
+</html>
